@@ -1,0 +1,29 @@
+<html>
+	<body>
+	F4B1D277-33BE-4476-A13E-C3D47745B06B
+		<object id="x1" name="x1" classid="CLSID:F4B1D277-33BE-4476-A13E-C3D47745B06B" width="50" height="50"></object>
+		<input	type="button" onclick="ccc()" value="读卡" />
+		<img id="bb" width="200" height="200" />
+		<br>
+		<input type="text" id="zz" />
+	</body>
+	<script>
+	function ccc()
+	{
+		var x=document.getElementById("x1");
+		x.GetCardInfo();
+		/*
+		alert('姓名：'+x.NAME);
+		alert('性别：'+x.SEX);
+		alert('民族：'+x.NATION);
+		alert('出生日期：'+x.BIRTHDAY);
+		alert('地址：'+x.ADDRESS);
+		alert('身份证号：'+x.IDCODE);
+		alert('发证机关：'+x.DEPARTMENT);
+		alert('有效期：'+x.STARTTOENDDATE);
+		*/
+		document.getElementById("zz").value=x.PHOTOIMAGEBYTES;
+	}
+	</script>
+</html>
+ 

@@ -1,0 +1,18 @@
+library HsCard;
+
+uses
+  ComServ,
+  HsCard_TLB in 'HsCard_TLB.pas';
+
+exports
+  DllGetClassObject,
+  DllCanUnloadNow,
+  DllRegisterServer,
+  DllUnregisterServer;
+
+{$R *.TLB}
+
+{$R *.RES}
+
+begin
+end.
